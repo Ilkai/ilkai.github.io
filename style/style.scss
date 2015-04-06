@@ -1,3 +1,5 @@
+@import "animations";
+
 $base-font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
 *,
@@ -38,6 +40,9 @@ h3 {
 	align-content: center;
 }
 
+// Inspiration
+// http://tympanus.net/Development/ButtonComponentMorph/index3.html
+
 .folio__piece {
 	max-width: 256px;
 	margin: 0 4px;
@@ -48,6 +53,36 @@ h3 {
 	color: #000;
 
 	position: relative;
+	z-index: 2;
+}
+
+.toggle__content { display: none; }
+
+.toggle__content:not(:checked) ~ .folio__piece__content {
+	opacity: 0;
+	top: 100%;
+}
+
+.toggle__content:checked ~ .folio__piece__content {
+	-webkit-animation: jelly 1000ms linear both;
+	animation: jelly 1000ms linear both;
+}
+
+.folio__piece__content {
+	position: fixed;
+	background: #fff;
+	color: #000;
+	padding: 32px;
+	top: 0;
+	left: 0;
+	width: 100%;
+	min-height: 100%;
+	z-index: 2;
+}
+
+.content__wrap {
+	width: 32em;
+	margin: 0 auto;
 }
 
 .piece__image {
