@@ -1,0 +1,31 @@
+/*
+
+  STYLES
+
+  Add custom styles here.
+
+*/
+
+.w-app {
+	width: 375px;
+}
+
+.emb-box {
+	position: relative;
+}
+
+.emb-box hr {
+	position: absolute;
+	content: "";
+	width: 64rem;
+	height: 375px;
+	border: 4px solid var(--moon-gray);
+}
+
+.emb-box-l hr {
+	left: -4rem;
+}
+
+.emb-box-r hr {
+	right: -4rem;
+}

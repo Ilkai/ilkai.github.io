@@ -1,0 +1,52 @@
+{
+  "name": "lndws-portfolio",
+  "version": "0.1.0",
+  "description": "LNDWs Portfolio",
+  "author": "ilkai",
+  "style": "css/tachyons.min.css",
+  "main": "css/tachyons.css",
+  "files": [
+    "css",
+    "src"
+  ],
+  "repository": "ilkai/ilkai.github.com",
+  "keywords": [],
+  "license": "n/a",
+  "devDependencies": {
+    "copy-files": "^0.1.0",
+    "immutable-css-cli": "^1.1.1",
+    "normalize.css": "^7.0.0",
+    "tachyons-cli": "^1.0.11",
+    "tachyons-modules": "^1.1.10",
+    "watch": "^1.0.2"
+  },
+  "contributors": [
+    {
+      "name": "lynden noye",
+      "email": "lt.noye@gmail.com"
+    },
+    {
+      "name": "adam morse",
+      "email": "hi@mrmrs.cc"
+    },
+    {
+      "name": "john otander",
+      "url": "http://johnotander.com"
+    }
+  ],
+  "scripts": {
+    "start": "npm run build:watch",
+    "mutations": "immutable-css src/tachyons.css --strict",
+    "build": "npm run build:css && npm run build:minify",
+    "build:css": "tachyons src/tachyons.css > css/tachyons.css",
+    "build:minify": "tachyons src/tachyons.css -m > css/tachyons.min.css",
+    "build:watch": "watch \"npm run build\" ./src/",
+    "copy:rellax": "cp node_modules/rellax/rellax.min.js js/",
+    "copy:waypoints": "cp node_modules/waypoints/lib/noframework.waypoints.min.js js/",
+    "postinstall": "npm run copy:rellax && npm run copy:waypoints"
+  },
+  "dependencies": {
+    "rellax": "^1.5.0",
+    "waypoints": "^4.0.1"
+  }
+}
