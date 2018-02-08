@@ -2,7 +2,7 @@
   "name": "lndws-portfolio",
   "version": "0.1.0",
   "description": "LNDWs Portfolio",
-  "author": "ilkai",
+  "author": "Lynden Noye",
   "style": "css/tachyons.min.css",
   "main": "css/tachyons.css",
   "files": [
@@ -24,14 +24,6 @@
     {
       "name": "lynden noye",
       "email": "lt.noye@gmail.com"
-    },
-    {
-      "name": "adam morse",
-      "email": "hi@mrmrs.cc"
-    },
-    {
-      "name": "john otander",
-      "url": "http://johnotander.com"
     }
   ],
   "scripts": {
