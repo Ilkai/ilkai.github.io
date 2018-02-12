@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-100 black">
+<head>
+	<!-- Attribution
+			tachyons
+			codrops
+			unsplash
+	-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>
+		Portfolio of Lynden Noye &mdash; UX &amp; UI Designer
+	</title>
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<!-- TODO OG tags -->
+	<!-- TODO GA -->
+	<!-- TODO min-height alert -->
+	<!-- TODO modern browser alert -->
+	<!-- TODO waypoint.js -->
+	<!-- TODO aria roles -->
+</head>
+<body class="sans-serif fw4 h-100 bg-near-white gray overflow-hidden overflow-scroll-l">
+	<!-- <div class="fixed bottom-1 right-1 br2 bg-near-white black pa2">
+		<span class="dn-m dn-l">Mobile</span>
+		<span class="dn db-m">Medium</span>
+		<span class="dn db-l">Large</span>
+	</div> -->
+	<header class="fixed top-0 z-5 w-100 flex flex-row bg-black white pv3-ns ph4-ns justify-between">
+		<div class="ident flex items-baseline">
+			<!-- <img class="w2 h2 br-100 self-center mr2" src="img/face.jpg"> -->
+			<h1 class="f5 lh-solid mt1 mb0 ml0 mr3">Lynden Noye</h1>
+			<h2 class="f6 fw4 lh-solid ma0 moon-gray">UX &amp; UI Designer &bull; Melbourne, Australia</h2>
+		</div>
+		<nav>
+			<ul class="list pl0 nav-list lh-copy flex flex-row self-end mv0 ttu f7 tracked b">
+				<!--
+				<a class="link white" href="#work">
+					<li class="nav-link pv1 ph3 hover-bg-white-10 br2">Work</li>
+				</a>
+				<a class="link white" href="#about">
+					<li class="nav-link  pv1 ph3 hover-bg-white-10 br2">About</li>
+				</a>
+				-->
+				<a class="link white" href="mailto:lt.noye@gmail.com">
+					<li class="nav-link  pv1 ph3 hover-bg-white-10 br2">Email</li>
+				</a>
+				<a class="link white" href="https://www.linkedin.com/in/lynden-noye-5b492570/" target="blank">
+					<li class="nav-link  pv1 ph3 hover-bg-white-10 br2">LinkedIn</li>
+				</a>
+				<a class="link white" href="https://twitter.com/ilkai" target="blank">
+					<li class="nav-link  pv1 ph3 hover-bg-white-10 br2">Twitter</li>
+				</a>
+				<a class="link white" href="https://dribbble.com/lndw" target="blank">
+					<li class="nav-link  pv1 ph3 hover-bg-white-10 br2">Dribbble</li>
+				</a>
+			</ul>
+		</nav>
+	</header>
+	<div class="width-wrap mw8 center">
+		<main>
+			<section id="work" class="">
+				<article class="flex flex-row items-center vh-100">
+					<div class="flex flex-column justify-center emb-box emb-box-l w5 pt3 pr3 pb5 pl4">
+						<hr class="rellax" data-rellax-speed="-3" data-rellax-percentage="0.5">
+						<h2 class="ttu tracked f6 fw7 mv2">
+							iOS App
+						</h2>
+						<h1 class="f2 black fw2 mv2">
+							Recreation Mapping v2
+						</h1>
+						<ul class="list lh-copy pl2">
+							<li>Project Management</li>
+							<li>UX &amp; UI Design</li>
+						</ul>
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-2" data-rellax-percentage="0.5"
+							src="img/mte-v2-02.png"
+							srcset="img/mte-v2-02@2x.png">
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-1" data-rellax-percentage="0.5"
+							src="img/mte-v2-01.png"
+							srcset="img/mte-v2-01@2x.png">
+					</div>
+				</article>
+				<article class="flex flex-row items-center vh-100">
+					<div class="flex flex-column justify-center order-last emb-box emb-box-r w5 pt3 pr3 pb5 pl4">
+						<hr class="rellax" data-rellax-speed="-3">
+						<h2 class="ttu tracked f6 fw7 mv2">
+							iOS App
+						</h2>
+						<h1 class="f2 black fw2 mv2">
+							Recreation Mapping v1
+						</h1>
+						<ul class="list lh-copy pl2">
+							<li>Project Management</li>
+							<li>UX &amp; UI Design</li>
+						</ul>
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-2"
+							src="img/mte-02.png"
+							srcset="img/mte-02@2x.png">
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-1"
+							src="img/mte-01.png"
+							srcset="img/mte-01@2x.png">
+					</div>
+				</article>
+				<article class="flex flex-row items-center vh-100">
+					<div class="flex flex-column justify-center emb-box emb-box-l w5 pt3 pr3 pb5 pl4">
+						<hr class="rellax" data-rellax-speed="-3">
+						<h2 class="ttu tracked f6 fw7 mv2">
+							iOS App
+						</h2>
+						<h1 class="f2 black fw2 mv2">
+							Unnamed Digital Bank
+						</h1>
+						<ul class="list lh-copy pl2">
+							<li>Design Concepts</li>
+						</ul>
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-2"
+							src="img/chg-02.png"
+							srcset="img/chg-02@2x.png">
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-1"
+							src="img/chg-01.png"
+							srcset="img/chg-01@2x.png">
+					</div>
+				</article>
+				<article class="flex flex-row items-center vh-100">
+					<div class="flex flex-column justify-center order-last emb-box emb-box-r w5 pt3 pr3 pb5 pl4">
+						<hr class="rellax" data-rellax-speed="-3">
+						<h2 class="ttu tracked f6 fw7 mv2">
+							iOS &amp; Android Apps
+						</h2>
+						<h1 class="f2 black fw2 mv2">
+							Market Research Community
+						</h1>
+						<ul class="list lh-copy pl2">
+							<li>Project Management</li>
+							<li>UX &amp; UI Design</li>
+							<li>Product/Feature Design</li>
+						</ul>
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-2"
+							src="img/iiq-02.png"
+							srcset="img/iiq-02@2x.png">
+					</div>
+					<div>
+						<img class="w-app rellax" data-rellax-speed="-1"
+							src="img/iiq-01.png"
+							srcset="img/iiq-01@2x.png">
+					</div>
+				</article>
+			</section>
+		</main>
+	</div>
+	<footer class="pt5 pb6 relative tc ttu tracked f7 b mid-grey bg-light-gray">
+		Built fairly quickly by <a class="link black" href="https://twitter.com/ilkai">@ilkai</a><br><br>
+		Powered by <a class="link black" href="https://tachyons.io">Tachyons</a>, <a class="link black" href="#">Rellax</a>, <a class="link black" href="#">Waypoints</a>
+	</footer>
+	<div class="dn-l fixed absolute--fill bg-white z-max flex">
+		<pre>
+	/*
+		TODO
+		Tablet and mobile
+	*/
+		</pre>
+	</div>
+	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/rellax.min.js"></script>
+	<script>
+		var rellax = new Rellax('.rellax', {center: true});
+	</script>
+	<script id="__bs_script__">//<![CDATA[
+		document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));//]]>
+	</script>
+</body>
+</html>
