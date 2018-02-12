@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en" class="min-h-100 black">
+<head>
+	<!-- Attribution
+			tachyons
+			codrops
+			unsplash
+	-->
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=Edge">
+	<title>
+		Portfolio of Lynden Noye &mdash; UX &amp; UI Designer
+	</title>
+	<meta name="author" content="">
+	<meta name="description" content="">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="styles.css">
+	<!-- TODO OG tags -->
+	<!-- TODO GA -->
+	<!-- TODO min-height alert -->
+	<!-- TODO modern browser alert -->
+	<!-- TODO waypoint.js -->
+	<!-- TODO aria roles -->
+</head>
+<body class="ibm-plex fw4 lh-copy h-100 bg-near-white mid-gray">
+	<div class="fixed bottom-1 right-1 br2 bg-black white pv1 ph2 lh-solid ttu tracked f7 fw7">
+		<span class="dn-m dn-l">Mobile</span>
+		<span class="dn db-m">Medium</span>
+		<span class="dn db-l">Large</span>
+	</div>
+	<section class="mh4 mv3 vh-75 flex flex-column justify-center">
+		<p>I&apos;m Lynden, a UX &amp; UI designer from Melbourne, Australia.</p>
+		<h1 class="f-4 fw3 mv0 lh-solid">I like patterns.</h1>
+		<p>Our brains are very good at recognising patterns. The more familiar someone is with an interface, the easier they will find it to use.</p>
+	</section>
+	<script src="js/noframework.waypoints.min.js"></script>
+	<script src="js/rellax.min.js"></script>
+	<script>
+		var rellax = new Rellax('.rellax', {center: true});
+	</script>
+	<script id="__bs_script__">//<![CDATA[
+		document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));//]]>
+	</script>
+</body>
+</html>

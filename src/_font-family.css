@@ -5,8 +5,12 @@
 
 */
 
-.ibm-plex {
-  font-family: "ff-ibm-plex", "IBM Plex", sans-serif;
+.ibm-plex-sans {
+  font-family: "ff-ibm-plex", fallback, "IBM Plex", sans-serif;
+}
+
+.ibm-plex-serif {
+  font-family: "ff-ibm-plex-serif", "IBM Plex Serif", serif;
 }
 
 
