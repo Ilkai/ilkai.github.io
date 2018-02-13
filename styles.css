@@ -755,13 +755,40 @@ img { max-width: 100%; }
 .fl { float: left; _display: inline; }
 .fr { float: right; _display: inline; }
 .fn { float: none; }
+/*	Font Weights
+	font-weight: 100	Thin (Hairline)
+	font-weight: 200	Extra Light (Ultra Light)
+	font-weight: 300	Light
+	font-weight: 400	Regular
+	font-weight: 500	Medium
+	font-weight: 600	Semi Bold (Demi Bold)
+	font-weight: 700	Bold
+	font-weight: 800	Extra Bold (Ultra Bold)
+	font-weight: 900	Black (Heavy)
+*/
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-1 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-2 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-3 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Pi.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-4 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-1 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-2 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-3 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Pi.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-4 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-1 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-2 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-3 ); }
+@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Pi.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-4 ); }
+@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-1 ); }
+@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-2 ); }
+@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-3 ); }
+@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Pi.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-4 ); }
 /*
 
    FONT FAMILY GROUPS
    Docs: http://tachyons.io/docs/typography/font-family/
 
 */
-.ibm-plex-sans { font-family: "ff-ibm-plex", fallback, "IBM Plex", sans-serif; }
+.ibm-plex-sans { font-family: "ff-ibm-plex-sans", fallback, "IBM Plex", sans-serif; }
 .ibm-plex-serif { font-family: "ff-ibm-plex-serif", "IBM Plex Serif", serif; }
 .sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
 .serif { font-family: georgia, times, serif; }
@@ -2012,22 +2039,17 @@ code, .code { font-family: Consolas, monaco, monospace; }
   Add custom styles here.
 
 */
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Light-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Light-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Light-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Light-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Pi.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-4 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Regular-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Regular-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Regular-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-Regular-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Pi.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-4 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-SemiBold-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-SemiBold-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-SemiBold-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex"; src: url( "fonts/IBMPlexSans-SemiBold-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Pi.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-4 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Pi.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-4 ); }
+.anim-clip {/* @keyframes duration | timing-function | delay | 
+iteration-count | direction | fill-mode | play-state | name */ -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; animation-delay: 0s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-direction: alternate; animation-direction: alternate; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-play-state: running; animation-play-state: running; -webkit-animation-name: myAnim; animation-name: myAnim; clip: rect( 0 206px 387px 0 ); }
+/*206 x 387*/
+@-webkit-keyframes myAnim {
+ from { clip: rect( 0 206px 387px 0 ); }
+ to { clip: rect( 0 206px 0 0 ); }
+}
+@keyframes myAnim {
+ from { clip: rect( 0 206px 387px 0 ); }
+ to { clip: rect( 0 206px 0 0 ); }
+}
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 /*
@@ -3188,6 +3210,29 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .rotate-225-l { -webkit-transform: rotate( 225deg ); transform: rotate( 225deg ); }
  .rotate-270-l { -webkit-transform: rotate( 270deg ); transform: rotate( 270deg ); }
  .rotate-315-l { -webkit-transform: rotate( 315deg ); transform: rotate( 315deg ); }
+ .black-l { color: #000; }
+ .near-black-l { color: #111; }
+ .dark-gray-l { color: #333; }
+ .mid-gray-l { color: #555; }
+ .gray-l { color: #777; }
+ .silver-l { color: #999; }
+ .light-silver-l { color: #aaa; }
+ .moon-gray-l { color: #ccc; }
+ .light-gray-l { color: #eee; }
+ .near-white-l { color: #f4f4f4; }
+ .white-l { color: #fff; }
+ .bg-black-l { background-color: #000; }
+ .bg-near-black-l { background-color: #111; }
+ .bg-dark-gray-l { background-color: #333; }
+ .bg-mid-gray-l { background-color: #555; }
+ .bg-gray-l { background-color: #777; }
+ .bg-silver-l { background-color: #999; }
+ .bg-light-silver-l { background-color: #aaa; }
+ .bg-moon-gray-l { background-color: #ccc; }
+ .bg-light-gray-l { background-color: #eee; }
+ .bg-near-white-l { background-color: #f4f4f4; }
+ .bg-white-l { background-color: #fff; }
+ .bg-transparent-l { background-color: transparent; }
  .pa0-l { padding: 0; }
  .pa1-l { padding: .25rem; }
  .pa2-l { padding: .5rem; }

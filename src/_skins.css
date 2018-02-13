@@ -134,3 +134,30 @@
 .bg-washed-yellow { background-color: var(--washed-yellow); }
 .bg-washed-red { background-color: var(--washed-red); }
 .bg-inherit { background-color: inherit; }
+
+@media (--breakpoint-large) {
+	.black-l {     color: var(--black); }
+.near-black-l {    color: var(--near-black); }
+.dark-gray-l {     color: var(--dark-gray); }
+.mid-gray-l {      color: var(--mid-gray); }
+.gray-l {          color: var(--gray); }
+.silver-l  {       color: var(--silver); }
+.light-silver-l {  color: var(--light-silver); }
+.moon-gray-l {     color: var(--moon-gray); }
+.light-gray-l {    color: var(--light-gray); }
+.near-white-l {    color: var(--near-white); }
+.white-l {         color: var(--white); }
+
+	.bg-black-l			{ background-color: var(--black); }
+	.bg-near-black-l	{ background-color: var(--near-black); }
+	.bg-dark-gray-l		{ background-color: var(--dark-gray); }
+	.bg-mid-gray-l		{ background-color: var(--mid-gray); }
+	.bg-gray-l			{ background-color: var(--gray); }
+	.bg-silver-l		{ background-color: var(--silver); }
+	.bg-light-silver-l	{ background-color: var(--light-silver); }
+	.bg-moon-gray-l		{ background-color: var(--moon-gray); }
+	.bg-light-gray-l	{ background-color: var(--light-gray); }
+	.bg-near-white-l	{ background-color: var(--near-white); }
+	.bg-white-l			{ background-color: var(--white); }
+	.bg-transparent-l	{ background-color: var(--transparent); }
+}

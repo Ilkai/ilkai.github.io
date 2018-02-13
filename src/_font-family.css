@@ -6,7 +6,7 @@
 */
 
 .ibm-plex-sans {
-  font-family: "ff-ibm-plex", fallback, "IBM Plex", sans-serif;
+  font-family: "ff-ibm-plex-sans", fallback, "IBM Plex", sans-serif;
 }
 
 .ibm-plex-serif {
