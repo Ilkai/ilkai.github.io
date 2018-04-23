@@ -38,6 +38,7 @@
     "postinstall": "npm run copy:rellax && npm run copy:waypoints"
   },
   "dependencies": {
+    "npm": "^5.7.1",
     "rellax": "^1.5.0",
     "waypoints": "^4.0.1"
   }
