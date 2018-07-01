@@ -5,17 +5,17 @@
 
 */
 
-.ibm-plex-sans {
-  font-family: "ff-ibm-plex-sans", fallback, "IBM Plex", sans-serif;
+.montserrat {
+  font-family: 'Montserrat', -apple-system, BlinkMacSystemFont,
+               'avenir next', avenir,
+               'helvetica neue', helvetica,
+               roboto, noto,
+               'segoe ui', arial,
+               sans-serif;
 }
-
-.ibm-plex-serif {
-  font-family: "ff-ibm-plex-serif", "IBM Plex Serif", serif;
-}
-
 
 .sans-serif {
-  font-family: -apple-system, BlinkMacSystemFont,
+  font-family: 'Neue Haas Grotesk', -apple-system, BlinkMacSystemFont,
                'avenir next', avenir,
                'helvetica neue', helvetica,
                ubuntu,

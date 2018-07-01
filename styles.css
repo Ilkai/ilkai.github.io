@@ -727,6 +727,28 @@ img { max-width: 100%; }
 .flex-grow-1 { -webkit-box-flex: 1; -ms-flex-positive: 1; flex-grow: 1; }
 .flex-shrink-0 { -ms-flex-negative: 0; flex-shrink: 0; }
 .flex-shrink-1 { -ms-flex-negative: 1; flex-shrink: 1; }
+.grid { display: -ms-grid; display: grid; }
+.sub-grid { display: sub-grid; }
+.grid--3x3 { -ms-grid-columns: 1fr 1fr 1fr; grid-template-columns: 1fr 1fr 1fr; -ms-grid-rows: 1fr 1fr 1fr; grid-template-rows: 1fr 1fr 1fr; }
+.grid-gap-1 { grid-column-gap: .25rem; grid-row-gap: .25rem; }
+.grid-gap-2 { grid-column-gap: .5rem; grid-row-gap: .5rem; }
+.grid-stretch { -ms-grid-column-align: stretch; justify-items: stretch; -webkit-box-align: stretch; -ms-flex-align: stretch; align-items: stretch; -webkit-box-pack: stretch; -ms-flex-pack: stretch; justify-content: stretch; -ms-flex-line-pack: stretch; align-content: stretch; }
+.gc-start-1 { -ms-grid-column: 1; grid-column-start: 1; }
+.gc-start-2 { -ms-grid-column: 2; grid-column-start: 2; }
+.gc-start-3 { -ms-grid-column: 3; grid-column-start: 3; }
+.gc-start-4 { -ms-grid-column: 4; grid-column-start: 4; }
+.gc-end-1 { grid-column-end: 1; }
+.gc-end-2 { grid-column-end: 2; }
+.gc-end-3 { grid-column-end: 3; }
+.gc-end-4 { grid-column-end: 4; }
+.gr-start-1 { -ms-grid-row: 1; grid-row-start: 1; }
+.gr-start-2 { -ms-grid-row: 2; grid-row-start: 2; }
+.gr-start-3 { -ms-grid-row: 3; grid-row-start: 3; }
+.gr-start-4 { -ms-grid-row: 4; grid-row-start: 4; }
+.gr-end-1 { grid-row-end: 1; }
+.gr-end-2 { grid-row-end: 2; }
+.gr-end-3 { grid-row-end: 3; }
+.gr-end-4 { grid-row-end: 4; }
 /*
 
    FLOATS
@@ -755,42 +777,14 @@ img { max-width: 100%; }
 .fl { float: left; _display: inline; }
 .fr { float: right; _display: inline; }
 .fn { float: none; }
-/*	Font Weights
-	font-weight: 100	Thin (Hairline)
-	font-weight: 200	Extra Light (Ultra Light)
-	font-weight: 300	Light
-	font-weight: 400	Regular
-	font-weight: 500	Medium
-	font-weight: 600	Semi Bold (Demi Bold)
-	font-weight: 700	Bold
-	font-weight: 800	Extra Bold (Ultra Bold)
-	font-weight: 900	Black (Heavy)
-*/
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Light-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Light-Pi.woff" ) format( woff ); font-style: normal; font-weight: 300; unicode-range: var( --unicode-range-4 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-Regular-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-Regular-Pi.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-4 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex-sans"; src: url( "fonts/IBMPlexSans-SemiBold-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSans-SemiBold-Pi.woff" ) format( woff ); font-style: normal; font-weight: 600; unicode-range: var( --unicode-range-4 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin1.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin1.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-1 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin2.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin2.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-2 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Latin3.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Latin3.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-3 ); }
-@font-face { font-family: "ff-ibm-plex-serif"; src: url( "fonts/IBMPlexSerif-Regular-Pi.woff2" ) format( woff2 ), url( "fonts/IBMPlexSerif-Regular-Pi.woff" ) format( woff ); font-style: normal; font-weight: 400; unicode-range: var( --unicode-range-4 ); }
 /*
 
    FONT FAMILY GROUPS
    Docs: http://tachyons.io/docs/typography/font-family/
 
 */
-.ibm-plex-sans { font-family: "ff-ibm-plex-sans", fallback, "IBM Plex", sans-serif; }
-.ibm-plex-serif { font-family: "ff-ibm-plex-serif", "IBM Plex Serif", serif; }
-.sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+.montserrat { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, roboto, noto, 'segoe ui', arial, sans-serif; }
+.sans-serif { font-family: 'Neue Haas Grotesk', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
 .serif { font-family: georgia, times, serif; }
 .system-sans-serif { font-family: sans-serif; }
 .system-serif { font-family: serif; }
@@ -2032,24 +2026,11 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .nested-links a { color: #357edd; transition: color .15s ease-in; }
 .nested-links a:hover { color: #96ccff; transition: color .15s ease-in; }
 .nested-links a:focus { color: #96ccff; transition: color .15s ease-in; }
-/*
-
-  STYLES
-
-  Add custom styles here.
-
-*/
-.anim-clip {/* @keyframes duration | timing-function | delay | 
-iteration-count | direction | fill-mode | play-state | name */ -webkit-animation-duration: 1s; animation-duration: 1s; -webkit-animation-timing-function: ease-in-out; animation-timing-function: ease-in-out; -webkit-animation-delay: 0s; animation-delay: 0s; -webkit-animation-iteration-count: infinite; animation-iteration-count: infinite; -webkit-animation-direction: alternate; animation-direction: alternate; -webkit-animation-fill-mode: both; animation-fill-mode: both; -webkit-animation-play-state: running; animation-play-state: running; -webkit-animation-name: myAnim; animation-name: myAnim; clip: rect( 0 206px 387px 0 ); }
-/*206 x 387*/
-@-webkit-keyframes myAnim {
- from { clip: rect( 0 206px 387px 0 ); }
- to { clip: rect( 0 206px 0 0 ); }
-}
-@keyframes myAnim {
- from { clip: rect( 0 206px 387px 0 ); }
- to { clip: rect( 0 206px 0 0 ); }
-}
+.night-rider { color: #221510; }
+.bg-night-rider { background-color: #221510; }
+.bg-image--page-1 { background-image: linear-gradient( to bottom, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .3 ) 30%, rgba( 0, 0, 0, 0 ) ), url( "img/central-aus.jpg" ); background-size: cover; background-position: center, 10% center; }
+.ic { display: block; width: 32px; height: 32px; }
+.ic img { -o-object-fit: fill; object-fit: fill; }
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 /*
@@ -2547,6 +2528,7 @@ iteration-count | direction | fill-mode | play-state | name */ -webkit-animation
  .v-mid-ns { vertical-align: middle; }
  .v-top-ns { vertical-align: top; }
  .v-btm-ns { vertical-align: bottom; }
+ .bg-image--page-1 { background-position: 10% center; }
 }
 @media screen and (min-width: 30em) and (max-width: 60em) {
  .aspect-ratio-m { height: 0; position: relative; }
@@ -2971,6 +2953,7 @@ iteration-count | direction | fill-mode | play-state | name */ -webkit-animation
  .v-mid-m { vertical-align: middle; }
  .v-top-m { vertical-align: top; }
  .v-btm-m { vertical-align: bottom; }
+ .bg-image--page-1 { background-position: 5% center; }
 }
 @media screen and (min-width: 60em) {
  .aspect-ratio-l { height: 0; position: relative; }
@@ -3418,5 +3401,6 @@ iteration-count | direction | fill-mode | play-state | name */ -webkit-animation
  .v-mid-l { vertical-align: middle; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
+ .bg-image--page-1 { background-position: 0% center; }
 }
 
