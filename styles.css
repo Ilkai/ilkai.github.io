@@ -777,6 +777,22 @@ img { max-width: 100%; }
 .fl { float: left; _display: inline; }
 .fr { float: right; _display: inline; }
 .fn { float: none; }
+/*	Font Weights
+	font-weight: 100	Thin (Hairline)
+	font-weight: 200	Extra Light (Ultra Light)
+	font-weight: 300	Light
+	font-weight: 400	Regular
+	font-weight: 500	Medium
+	font-weight: 600	Semi Bold (Demi Bold)
+	font-weight: 700	Bold
+	font-weight: 800	Extra Bold (Ultra Bold)
+	font-weight: 900	Black (Heavy)
+*/
+@font-face { font-family: "Montserrat"; src: url( "/fonts/Montserrat-Thin.ttf" ); font-weight: 100; }
+@font-face { font-family: "Montserrat"; src: url( "/fonts/Montserrat-ExtraLight.ttf" ); font-weight: 200; }
+@font-face { font-family: "Montserrat"; src: url( "/fonts/Montserrat-Light.ttf" ); font-weight: 300; }
+@font-face { font-family: "Montserrat"; src: url( "/fonts/Montserrat-Regular.ttf" ); font-weight: 400; }
+@font-face { font-family: "Montserrat"; src: url( "/fonts/Montserrat-Medium.ttf" ); font-weight: 500; }
 /*
 
    FONT FAMILY GROUPS
@@ -784,7 +800,7 @@ img { max-width: 100%; }
 
 */
 .montserrat { font-family: 'Montserrat', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, roboto, noto, 'segoe ui', arial, sans-serif; }
-.sans-serif { font-family: 'Neue Haas Grotesk', -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
+.sans-serif { font-family: -apple-system, BlinkMacSystemFont, 'avenir next', avenir, 'helvetica neue', helvetica, ubuntu, roboto, noto, 'segoe ui', arial, sans-serif; }
 .serif { font-family: georgia, times, serif; }
 .system-sans-serif { font-family: sans-serif; }
 .system-serif { font-family: serif; }
