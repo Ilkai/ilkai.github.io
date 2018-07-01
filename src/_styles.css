@@ -1,44 +1,41 @@
-/*
 
-  STYLES
+:root {
+  --night-rider: #221510;
+};
 
-  Add custom styles here.
+.night-rider { color: var(--night-rider); }
+.bg-night-rider { background-color: var(--night-rider); }
 
-*/
-
-.legacy-browser {
-	display: block;
+.bg-image--page-1 {
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3) 30%, rgba(0,0,0,0)), url("img/central-aus.jpg");
+  background-size: cover;
+  background-position: center, 10% center;
 }
 
-html.cssgrid.flexbox .legacy-browser {
-	display: none;
+@media (--breakpoint-not-small) {
+  .bg-image--page-1 {
+    background-position: 10% center;
+  }
 }
 
-a.link {
-	position: relative;
-	transition: opacity 200ms ease;
+@media (--breakpoint-medium) {
+  .bg-image--page-1 {
+    background-position: 5% center;
+  }
 }
 
-a.link:hover,
-a.link:focus {
-	opacity: 0.9;
+@media (--breakpoint-large) {
+  .bg-image--page-1 {
+    background-position: 0% center;
+  }
 }
 
-a.link:before {
-	position: absolute;
-	content: "";
-	transition: transform 200ms ease;
-	left: 0;
-	bottom: 0;
-	width: 100%;
-	height: 0.125rem;
-	opacity: 1;
-	transform-origin: center left;
-	background-color: currentColor;
-	transform: scaleX(0px);
+.ic {
+  display: block;
+  width: 32px;
+  height: 32px;
 }
 
-a.link:hover:before,
-a.link:focus:before {
-	transform: scaleX(1);
+.ic img {
+  object-fit: fill;
 }
