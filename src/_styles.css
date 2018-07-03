@@ -1,10 +1,18 @@
 
 :root {
   --night-rider: #221510;
+  --coral: #FF7F50;
+  --brown-pod: #3D2319;
+  --copper-canyon: #79402B;
 };
 
-.night-rider { color: var(--night-rider); }
+.night-rider    { color: var(--night-rider); }
 .bg-night-rider { background-color: var(--night-rider); }
+.coral          { color: var(--coral); }
+.bg-coral       { background-color: var(--coral); }
+.b--coral       { border-color: var(--coral); }
+.brown-pod      { color: var(--brown-pod); }
+.copper-canyon  { color: var(--copper-canyon); }
 
 .bg-image--page-1 {
   background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3) 30%, rgba(0,0,0,0)), url("img/central-aus.jpg");
@@ -32,10 +40,35 @@
 
 .ic {
   display: block;
-  width: 32px;
-  height: 32px;
+  width: 2rem;
+  height: 2rem;
 }
 
-.ic img {
-  object-fit: fill;
+.wayfinder {
+  transform-origin: left top;
+  transform: rotate(-90deg);
+}
+
+@media (--breakpoint-not-small-vertical) {
+  .w5-nsv { width: 16rem; }
+  .ml4-nsv { margin-left: var(--spacing-large); }
+}
+
+@media (--breakpoint-medium-vertical) {
+  .w4-mv { width: 8rem; }
+  .pt5-mv { padding-top: var(--spacing-extra-large); }
+  .db-mv { display: block; }
+  .dn-mv { display: none; }
+}
+
+@media (--breakpoint-large-vertical) {
+  .w5-lv { width: 16rem; }
+  .pt6-lv { padding-top: var(--spacing-extra-extra-large); }
+  .db-lv { display: block; }
+  .dn-lv { display: none; }
+}
+
+@media (--breakpoint-youre-killing-me-vertical) {
+  .db-ykmv { display: block; }
+  .dn-ykmv { display: none; }
 }

@@ -2044,9 +2044,14 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .nested-links a:focus { color: #96ccff; transition: color .15s ease-in; }
 .night-rider { color: #221510; }
 .bg-night-rider { background-color: #221510; }
+.coral { color: #ff7f50; }
+.bg-coral { background-color: #ff7f50; }
+.b--coral { border-color: #ff7f50; }
+.brown-pod { color: #3d2319; }
+.copper-canyon { color: #79402b; }
 .bg-image--page-1 { background-image: linear-gradient( to bottom, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .3 ) 30%, rgba( 0, 0, 0, 0 ) ), url( "img/central-aus.jpg" ); background-size: cover; background-position: center, 10% center; }
-.ic { display: block; width: 32px; height: 32px; }
-.ic img { -o-object-fit: fill; object-fit: fill; }
+.ic { display: block; width: 2rem; height: 2rem; }
+.wayfinder { -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate( -90deg ); transform: rotate( -90deg ); }
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 /*
@@ -3418,5 +3423,25 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
  .bg-image--page-1 { background-position: 0% center; }
+}
+@media screen and (min-height: 30em) {
+ .w5-nsv { width: 16rem; }
+ .ml4-nsv { margin-left: 2rem; }
+}
+@media screen and (min-height: 30em) and (max-height: 40em) {
+ .w4-mv { width: 8rem; }
+ .pt5-mv { padding-top: 4rem; }
+ .db-mv { display: block; }
+ .dn-mv { display: none; }
+}
+@media screen and (min-height: 40em) {
+ .w5-lv { width: 16rem; }
+ .pt6-lv { padding-top: 8rem; }
+ .db-lv { display: block; }
+ .dn-lv { display: none; }
+}
+@media screen and (max-height: 20em) {
+ .db-ykmv { display: block; }
+ .dn-ykmv { display: none; }
 }
 
