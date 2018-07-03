@@ -1,0 +1,41 @@
+/*	Font Weights
+	font-weight: 100	Thin (Hairline)
+	font-weight: 200	Extra Light (Ultra Light)
+	font-weight: 300	Light
+	font-weight: 400	Regular
+	font-weight: 500	Medium
+	font-weight: 600	Semi Bold (Demi Bold)
+	font-weight: 700	Bold
+	font-weight: 800	Extra Bold (Ultra Bold)
+	font-weight: 900	Black (Heavy)
+*/
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-Thin.ttf");
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-ExtraLight.ttf");
+	font-weight: 200;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-Light.ttf");
+	font-weight: 300;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-Regular.ttf");
+	font-weight: 400;
+}
+
+@font-face {
+	font-family: "Montserrat";
+	src: url("/fonts/Montserrat-Medium.ttf");
+	font-weight: 500;
+}
