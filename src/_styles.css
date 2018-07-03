@@ -15,7 +15,7 @@
 .copper-canyon  { color: var(--copper-canyon); }
 
 .bg-image--page-1 {
-  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3) 30%, rgba(0,0,0,0)), url("img/central-aus.jpg");
+  background-image: linear-gradient(to bottom, rgba(0,0,0,0.6), rgba(0,0,0,0.3) 30%, rgba(0,0,0,0)), url("/img/central-aus.jpg");
   background-size: cover;
   background-position: center, 10% center;
 }
