@@ -2052,6 +2052,47 @@ code, .code { font-family: Consolas, monaco, monospace; }
 .bg-image--page-1 { background-image: linear-gradient( to bottom, rgba( 0, 0, 0, .6 ), rgba( 0, 0, 0, .3 ) 30%, rgba( 0, 0, 0, 0 ) ), url( "/img/central-aus.jpg" ); background-size: cover; background-position: center, 10% center; }
 .ic { display: block; width: 2rem; height: 2rem; }
 .wayfinder { -webkit-transform-origin: left top; transform-origin: left top; -webkit-transform: rotate( -90deg ); transform: rotate( -90deg ); }
+.pager-wrap { width: calc( 100%*4 ); transition: -webkit-transform 200ms ease-in-out; transition: transform 200ms ease-in-out; transition: transform 200ms ease-in-out, -webkit-transform 200ms ease-in-out; }
+.pager-button { min-width: 10rem; background-color: transparent; border: none; transition: 100ms ease background-color; }
+.pager-button:hover:not(:disabled) { background-color: #fff; }
+.pager-button:focus:not(:disabled) { outline: 1px solid #ff7f50; }
+.pager-button:active { background-color: rgba( 255, 255, 255, .75 ); }
+.pager-button:disabled { color: #ccc; opacity: .75; }
+.chevron { width: .5rem; height: .5rem; border-color: currentColor; border-style: solid; -webkit-transform-origin: center; transform-origin: center; border-top-width: .125rem; border-right-width: .125rem; border-bottom-width: 0; border-left-width: 0; }
+.chevron-right { -webkit-transform: rotate( 45deg ); transform: rotate( 45deg ); }
+.chevron-left { -webkit-transform: rotate( -135deg ); transform: rotate( -135deg ); }
+.work-grid ul li:not(:last-of-type):after { content: ","; margin-right: .25em; }
+.work-grid { display: -ms-grid; display: grid; -ms-grid-columns: auto; grid-template-columns: auto; -ms-grid-rows: auto; grid-template-rows: auto; }
+.cg1 { grid-column-gap: .25rem; }
+.cg2 { grid-column-gap: .5rem; }
+.cg3 { grid-column-gap: 1rem; }
+.cg4 { grid-column-gap: 2rem; }
+.cg5 { grid-column-gap: 4rem; }
+.rg1 { grid-row-gap: .25rem; }
+.rg2 { grid-row-gap: .5rem; }
+.rg3 { grid-row-gap: 1rem; }
+.rg4 { grid-row-gap: 2rem; }
+.rg5 { grid-row-gap: 4rem; }
+.rg6 { grid-row-gap: 8rem; }
+.rg7 { grid-row-gap: 16rem; }
+.wg-cs-1 { -ms-grid-column: 1; grid-column-start: 1; }
+.wg-cs-2 { -ms-grid-column: 2; grid-column-start: 2; }
+.wg-cs-3 { -ms-grid-column: 3; grid-column-start: 3; }
+.wg-ce-1 { grid-column-end: 1; }
+.wg-ce-2 { grid-column-end: 2; }
+.wg-ce-3 { grid-column-end: 3; }
+.wg-rs-1 { -ms-grid-row: 1; grid-row-start: 1; }
+.wg-rs-2 { -ms-grid-row: 2; grid-row-start: 2; }
+.wg-rs-3 { -ms-grid-row: 3; grid-row-start: 3; }
+.wg-rs-4 { -ms-grid-row: 4; grid-row-start: 4; }
+.wg-rs-5 { -ms-grid-row: 5; grid-row-start: 5; }
+.wg-rs-6 { -ms-grid-row: 6; grid-row-start: 6; }
+.wg-re-1 { grid-row-end: 1; }
+.wg-re-2 { grid-row-end: 2; }
+.wg-re-3 { grid-row-end: 3; }
+.wg-re-4 { grid-row-end: 4; }
+.wg-re-5 { grid-row-end: 5; }
+.wg-re-6 { grid-row-end: 6; }
 /* Variables */
 /* Importing here will allow you to override any variables in the modules */
 /*
@@ -3423,10 +3464,33 @@ code, .code { font-family: Consolas, monaco, monospace; }
  .v-top-l { vertical-align: top; }
  .v-btm-l { vertical-align: bottom; }
  .bg-image--page-1 { background-position: 0% center; }
+ .wg-cs-1-l { -ms-grid-column: 1; grid-column-start: 1; }
+ .wg-cs-2-l { -ms-grid-column: 2; grid-column-start: 2; }
+ .wg-cs-3-l { -ms-grid-column: 3; grid-column-start: 3; }
+ .wg-ce-1-l { grid-column-end: 1; }
+ .wg-ce-2-l { grid-column-end: 2; }
+ .wg-ce-3-l { grid-column-end: 3; }
+ .wg-rs-1-l { -ms-grid-row: 1; grid-row-start: 1; }
+ .wg-rs-2-l { -ms-grid-row: 2; grid-row-start: 2; }
+ .wg-rs-3-l { -ms-grid-row: 3; grid-row-start: 3; }
+ .wg-rs-4-l { -ms-grid-row: 4; grid-row-start: 4; }
+ .wg-rs-5-l { -ms-grid-row: 5; grid-row-start: 5; }
+ .wg-rs-6-l { -ms-grid-row: 6; grid-row-start: 6; }
+ .wg-re-1-l { grid-row-end: 1; }
+ .wg-re-2-l { grid-row-end: 2; }
+ .wg-re-3-l { grid-row-end: 3; }
+ .wg-re-4-l { grid-row-end: 4; }
+ .wg-re-5-l { grid-row-end: 5; }
+ .wg-re-6-l { grid-row-end: 6; }
+}
+@media screen and (min-width: 60em) and screen and (min-height: 40em) {
+ .pb5-l-nsv { padding-bottom: 4rem; }
 }
 @media screen and (min-height: 30em) {
  .w5-nsv { width: 16rem; }
  .ml4-nsv { margin-left: 2rem; }
+ .pb7-nsv { padding-bottom: 16rem; }
+ .pb6-nsv { padding-bottom: 8rem; }
 }
 @media screen and (min-height: 30em) and (max-height: 40em) {
  .w4-mv { width: 8rem; }
