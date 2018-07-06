@@ -43,10 +43,10 @@
 	<!-- TODO waypoint.js -->
 	<!-- TODO aria roles -->
 </head>
-<body class="montserrat f5 fw4 lh-copy min-vh-100 white bg-night-rider">
+<body class="montserrat f5 fw4 lh-copy min-vh-100 white bg-night-rider overflow-y-hidden">
 
 	<!-- Viewport debugging -->
-	
+	<!-- 
 	<div class="fixed bottom-1 right-1 br2 bg-black white pv2 ph3 lh-title ttu tr tracked-mega f7 fw5 o-50">
 		<span class="db dn-mv dn-lv">&#8597; Small</span>
 		<span class="dn db-mv">&#8597; Medium</span>
@@ -55,7 +55,7 @@
 		<span class="dn db-m">&#8596; Medium</span>
 		<span class="dn db-l">&#8596; Large</span>
 	</div>
-	
+	 -->
 	
 	<section class="page page--1 bg-image--page-1">
 		<div class="flex flex-column min-vh-100 pt5 pt6-mv pt6-lv ph4 ph5-ns mw8-ns center">
@@ -80,26 +80,28 @@
 	</section>
 	<section class="page page--2 bg-image--page-2 bg-white pb6-nsv">
 		<div class="min-vh-100 pt5 pb7-nsv pb5-l-nsv pl4 pl5-ns pr4 pr5-ns mw8-ns center">
-			<div class="wayfinder wayfinder--to-page-2 dib">
-				<div class=" flex flex-row items-center">
-					<hr class="w4 w5-nsv b--coral b--solid bl-0 br-0 bb-0 bw1 ma0">
-					<h1 class="f7 fw5 coral ttu tracked-mega ml3 ml4-nsv lh-solid">About</h1>
+			<div class="rellax" data-rellax-speed="1">
+				<div class="wayfinder wayfinder--to-page-2 dib absolute">
+					<div class=" flex flex-row items-center">
+						<hr class="w4 w5-nsv b--coral b--solid bl-0 br-0 bb-0 bw1 ma0">
+						<h1 class="f7 fw5 coral ttu tracked-mega ml3 ml4-nsv lh-solid">About</h1>
+					</div>
 				</div>
 			</div>
 			<div class="mt5 f5 f4-ns measure center">
-				<h3 class="f5 f4-ns fw4 brown-pod measure mt0 mb3 mb4-ns">
+				<h3 class="f5 f4-ns fw4 near-black measure mt0 mb3 mb4-ns">
 					Hi, my name is Lynden, and I&apos;m a UX &amp; UI Designer from Melbourne, Victoria.
 				</h3>
-				<p class="copper-canyon f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
+				<p class="mid-gray f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
 					I've been designing digital products for web and native for over four years. I have developed a host of versatile skills, including thorough functional and non-functional requirements gathering, distillation of requirements into an information architecture and site maps, designing and testing potential solutions, and leading implementation within small Agile development teams.
 				</p>
-				<p class="copper-canyon f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
+				<p class="mid-gray f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
 					By virtue of my natural curiosity for tech, I've taught myself Git and Git Flow, can use a unix-style CLI, write semantic HTML, and style my own visual designs in CSS flawlessly. I've also created interaction and motion prototypes using Framer, Pixate (RIP), Form (RIP), Origami Studio, Codepen and Principle.
 				</p>
-				<p class="copper-canyon f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
+				<p class="mid-gray f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
 					I'm also a client-facing project lead and bring my enthusiasm for elegant design into every meeting. I'm able to quickly build rapport through transparent, open communication and I actively cultivate and value collaborative and trusting professional relationships.
 				</p>
-				<p class="copper-canyon f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
+				<p class="mid-gray f6 f5-ns fw3 measure mt0 mb2 mb3-ns">
 					Please don&apos;t hesitate to reach out on <a href="https://dribbble.com/lndw" class="link coral">Dribbble</a> or <a href="https://www.linkedin.com/in/lynden-noye-5b492570" class="link coral">LinkedIn</a> if I would be a great addition to your team or project.
 				</p>
 			</div>
@@ -107,54 +109,58 @@
 	</section>
 	<section class="page page--3 bg-near-white  bb bw3 b--coral pb6-nsv">
 		<div class="min-vh-100 pt5 pb7-nsv pb5-l-nsv  pl4 pl5-ns pr4 pr5-ns mw8-ns center">
-			<div class="wayfinder wayfinder--to-page-2 dib">
-				<div class=" flex flex-row items-center">
-					<hr class="w4 w5-nsv b--coral b--solid bl-0 br-0 bb-0 bw1 ma0">
-					<h1 class="f7 fw5 coral ttu tracked-mega ml3 ml4-nsv lh-solid">Portfolio</h1>
+			<div class="rellax" data-rellax-speed="1">
+				<div class="wayfinder wayfinder--to-page-2 dib absolute">
+					<div class=" flex flex-row items-center">
+						<hr class="w4 w5-nsv b--coral b--solid bl-0 br-0 bb-0 bw1 ma0">
+						<h1 class="f7 fw5 coral ttu tracked-mega ml3 ml4-nsv lh-solid">Work</h1>
+					</div>
 				</div>
 			</div>
 			<div class="work-grid cg5 rg6 tc mt5">
-				<article class="rellax wg-cs-2 wg-ce-3 wg-rs-1 wg-re-3" data-rellax-speed="-2">
-					<img class="db" src="https://placehold.it/800x800">
-					<h2 class="f5 fw4 lh-title mt3 mb1 brown-pod">
+				<article class="wg-cs-1 wg-ce-3 wg-rs-1 wg-re-3 wg-cs-2-l wg-ce-3-l wg-rs-1-l wg-re-3-l">
+					<img class="db" src="img/iiq-card-sort.jpg" srcset="img/iiq-card-sort@2x.jpg 2x">
+					<h2 class="f5 fw4 lh-title mt3 mb1 coral">
 						Insight IQ
 					</h2>
-					<ul class="f6 fw3 lh-title copper-canyon flex flex-row flex-wrap justify-center list pa0 ma0">
+					<ul class="f6 fw3 lh-title silver flex flex-row flex-wrap justify-center list pa0 ma0">
 						<li>Product Design</li>
 						<li>Project Management</li>
 					</ul>
 				</article>
-				<article class="rellax wg-cs-1 wg-ce-2 wg-rs-2 wg-re-4" data-rellax-speed="2">
-					<img class="db" src="https://placehold.it/800x800">
-					<h2 class="f5 fw4 lh-title mt3 mb1 brown-pod">
+				<article class="wg-cs-1 wg-ce-3 wg-rs-3 wg-re-6 wg-cs-1-l wg-ce-2-l wg-rs-2-l wg-re-4-l">
+					<img class="db" src="img/cc-onboarding.jpg" srcset="img/cc-onboarding@2x.jpg 2x">
+					<h2 class="f5 fw4 lh-title mt3 mb1 coral">
 						ChimpChange
 					</h2>
-					<ul class="f6 fw3 lh-title copper-canyon flex flex-row flex-wrap justify-center list pa0 ma0">
+					<ul class="f6 fw3 lh-title silver flex flex-row flex-wrap justify-center list pa0 ma0">
 						<li>Market Research</li>
 						<li>Product Design</li>
 					</ul>
 				</article>
-				<article class="rellax wg-cs-2 wg-ce-3 wg-rs-3 wg-re-5" data-rellax-speed="-2">
-					<img class="db" src="https://placehold.it/800x800">
-					<h2 class="f5 fw4 lh-title mt3 mb1 brown-pod">
+				<article class="wg-cs-1 wg-ce-3 wg-rs-6 wg-re-9 wg-cs-2-l wg-ce-3-l wg-rs-3-l wg-re-5-l">
+					<img class="db" src="img/mte-v1.jpg" srcset="img/mte-v1@2x.jpg 2x">
+					<h2 class="f5 fw4 lh-title mt3 mb1 coral">
 						More to Explore
 					</h2>
-					<ul class="f6 fw3 lh-title copper-canyon flex flex-row flex-wrap justify-center list pa0 ma0">
+					<ul class="f6 fw3 lh-title silver flex flex-row flex-wrap justify-center list pa0 ma0">
 						<li>Product Design</li>
 						<li>Project Management</li>
 						<li>Client Management</li>
 					</ul>
 				</article>
-				<article class="rellax wg-cs-1 wg-ce-2 wg-rs-4 wg-re-6" data-rellax-speed="2">
-					<img class="db" src="https://placehold.it/800x800">
-					<h2 class="f5 fw4 lh-title mt3 mb1 brown-pod">
+				<article class="wg-cs-1 wg-ce-3 wg-rs-9 wg-re-12 wg-cs-1-l wg-ce-2-l wg-rs-4-l wg-re-6-l">
+					<img class="db" src="img/gp-wires.jpg" srcset="img/gp-wires@2x.jpg 2x">
+					<h2 class="f5 fw4 lh-title mt3 mb1 coral">
 						Melbourne F1 Grand Prix
 					</h2>
-					<ul class="f6 fw3 lh-title copper-canyon flex flex-row flex-wrap justify-center list pa0 ma0">
+					<ul class="f6 fw3 lh-title silver flex flex-row flex-wrap justify-center list pa0 ma0">
 						<li>UI Wireframes</li>
 					</ul>
 				</article>
 			</div>
+
+			<div class="f5 fw4 tc gray mt7">👋 Thanks for visiting!</div>
 			
 		</div>
 	</section>
@@ -167,16 +173,11 @@
 	</div>
 
 	
-	<!-- <script src="js/noframework.waypoints.min.js"></script>
-	<script src="js/rellax.min.js"></script>
+	<!-- <script src="js/noframework.waypoints.min.js"></script> -->
+	<!-- <script src="js/rellax.min.js"></script>
 	<script>
 		var rellax = new Rellax('.rellax', {center: true});
 	</script> -->
-	<!-- 
-	<script id="__bs_script__">//<![CDATA[
-		document.write("<script async src='http://HOST:3000/browser-sync/browser-sync-client.js?v=2.18.12'><\/script>".replace("HOST", location.hostname));//]]>
-	</script>
-	 -->
 
 	<script src="js/modernizr-custom.min.js"></script>
 </body>
